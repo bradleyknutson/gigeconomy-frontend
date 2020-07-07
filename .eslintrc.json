@@ -1,0 +1,109 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "node": true,
+    "jest": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+        ]
+      }
+    },
+    "react": {
+      "version": "16.3"
+    }
+  },
+  "extends": [
+    "eslint: recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "prettier",
+    "prettier/react"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalDecorators": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "prettier",
+    "fp",
+    "promise",
+    "filenames",
+    "react-hooks"
+  ],
+  "rules": {
+    "max-depth": [
+      "error",
+      {
+        "max": 2
+      }
+    ],
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
+    "no-unused-vars": 2,
+    "no-duplicate-imports": 0,
+    "import/no-duplicates": 2,
+    "import/named": 0,
+    "import/no-unresolved": 2,
+    "import/order": 2,
+    "react/prefer-stateless-function": 2,
+    "react/prop-types": [
+      1,
+      {
+        "skipUndeclared": true
+      }
+    ],
+    "react/display-name": 2,
+    "react/jsx-handler-names": "error",
+    "react/jsx-fragments": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "useTabs": true,
+        "tabWidth": 2,
+        "printWidth": 80,
+        "singleQuote": true,
+        "jsxBracketSameLine": true,
+        "trailingComma": "es5"
+      }
+    ],
+    "fp/no-arguments": "error",
+    "fp/no-delete": "error",
+    "fp/no-events": "error",
+    "fp/no-get-set": "error",
+    "fp/no-let": "error",
+    "fp/no-loops": "error",
+    "fp/no-mutating-assign": "error",
+    "fp/no-proxy": "error",
+    "promise/prefer-await-to-then": "error",
+    "promise/no-promise-in-callback": "error",
+    "promise/catch-or-return": "error",
+    "filenames/match-exported": [
+      0,
+      [
+        "kebab"
+      ],
+      "\\.component$"
+    ],
+    "space-before-function-paren": 0,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error"
+  }
+}
